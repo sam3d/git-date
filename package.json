@@ -1,0 +1,25 @@
+{
+  "name": "git-date",
+  "version": "0.1.0",
+  "description": "easily change the date of the previous git commit",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samholmes1337/git-date.git"
+  },
+  "bin": {
+      "git-date": "index.js"
+  },
+  "keywords": [
+    "git",
+    "date",
+    "amend",
+    "commit"
+  ],
+  "author": "Sam Holmes",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/samholmes1337/git-date/issues"
+  },
+  "homepage": "https://github.com/samholmes1337/git-date#readme"
+}
