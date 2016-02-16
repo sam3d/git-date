@@ -15,6 +15,7 @@ if (process.argv.length > 0) {
 
         // Date could be parsed, parse the date to git date format
         var dateString = moment(parsedDate).format("ddd MMM DD hh:mm:ss YYYY ZZ");
+        console.log("\nModified previous commit:\n\tAUTHOR_DATE " + colors.grey(dateString) + "\n\tCOMMITTER_DATE " + colors.grey(dateString) + "\n");
 
     } else {
         console.log("fatal: Could not parse \"" + date + "\" into a valid date");
