@@ -19,7 +19,6 @@ if (process.argv.length > 0) {
 
         // Actually modify the dates
         var command = "GIT_COMMITTER_DATE=\"" + dateString + "\" git commit --amend --date=\"" + dateString + "\" --no-edit";
-        console.log(command);
         exec(command, function(err, stdout, stderr){
             if (err){
                 console.log("fatal: Could not change the previous commit");
