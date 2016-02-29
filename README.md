@@ -1,6 +1,7 @@
-# git-date
+# git-date [![npm version](https://badge.fury.io/js/git-date.svg)](https://badge.fury.io/js/git-date)
 Easily change the date of the previous git commit
-![CLI demonstration](https://i.imgur.com/Q3ZMjud.png)
+![Demonstration](https://i.imgur.com/Q3ZMjud.png)
+[![NPM](https://nodei.co/npm/git-date.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/git-date/)
 
 ## Installation
 Make sure you have `nodejs`, `npm` and `git` installed first, and then run the following:
