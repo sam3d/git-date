@@ -35,6 +35,6 @@ if (process.argv.length > 0) {
 } else {
 
     // Show notice
-    console.log("warning: The 'date' command requires a date string");
+    console.log("fatal: No date string given");
 
 }
