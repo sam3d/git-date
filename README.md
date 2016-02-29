@@ -17,7 +17,7 @@ Because git-date uses the hyphenated alias that allows you to run it as a native
 $ git date <date string>
 ```
 
-Because `git-date` uses the full power of the [date library](http://sugarjs.com/dates) provided by `sugarjs`. This means that you can use a very large variety of commands to change the date:
+Because `git-date` uses the full power of the [date library](http://sugarjs.com/dates) provided by `sugarjs`, you can use a very large variety of commands to change the date:
 
 ```console
 $ git date 2010
