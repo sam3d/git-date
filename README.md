@@ -11,7 +11,7 @@ $ npm install git-date -g
 ```
 
 ## Usage
-Because git-date uses the hyphenated alias that allows you to run it as a native git command, you can run:
+`git-date` uses a hyphenated alias that allows you to run it as a native git command:
 
 ```console
 $ git date <date string>
