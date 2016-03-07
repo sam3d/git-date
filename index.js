@@ -15,7 +15,7 @@ if (process.argv.length > 0) {
     if (parsedDate != "Invalid Date"){
 
         // Date could be parsed, parse the date to git date format
-        var dateString = moment(parsedDate).format("ddd MMM DD hh:mm:ss YYYY ZZ");
+        var dateString = moment(parsedDate).format("ddd MMM DD HH:mm:ss YYYY ZZ");
 
         // Actually modify the dates
         var command = "GIT_COMMITTER_DATE=\"" + dateString + "\" git commit --amend --date=\"" + dateString + "\" --no-edit";
