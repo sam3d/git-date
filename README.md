@@ -17,7 +17,7 @@ $ npm install git-date -g
 $ git date <date string>
 ```
 
-Because `git-date` uses the full power of the [date library](http://sugarjs.com/dates) provided by `sugarjs`, you can use a very large variety of commands to change the date:
+Because `git-date` uses the full power of the [date library](https://sugarjs.com/docs/#/DateParsing) provided by `sugarjs`, you can use a very large variety of commands to change the date:
 
 ```console
 $ git date 2010
