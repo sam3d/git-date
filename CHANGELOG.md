@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 0.1.3 - 2016-09-21
+Not a massive update by any standard, just updating the libraries and switching to es6 syntax - general maintenance more than anything else.
+
 ## 0.1.2 - 2016-03-08
 ### Fixed
 - The date format was previously in 12-hour format, it now displays correctly in the 24-hour time format. @danhawkes
