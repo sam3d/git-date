@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/samholmes1337/git-date#readme",
   "dependencies": {
-    "colors": "^1.1.2",
-    "moment": "^2.11.2",
-    "sugar": "^1.4.1"
+    "chalk": "^1.1.3",
+    "moment": "^2.15.0",
+    "sugar": "^2.0.1"
   }
 }
