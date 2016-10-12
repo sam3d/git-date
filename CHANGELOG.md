@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# 0.1.4 - 2016-10-12
+A tiny reverse-compatibility update - thanks to @wiyarmir you can now use `git-date` with node v5.0.0.
+
 ## 0.1.3 - 2016-09-21
 Not a massive update by any standard, just updating the libraries and switching to es6 syntax - general maintenance more than anything else.
 
