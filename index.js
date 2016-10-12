@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+
+'use strict';
+
 const moment = require("moment");
 const sugar = require("sugar");
 const chalk = require("chalk");
