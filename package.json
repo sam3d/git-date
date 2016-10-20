@@ -18,7 +18,7 @@
     "commit"
   ],
   "author": "Sam Holmes",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/samholmes1337/git-date/issues"
   },
