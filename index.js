@@ -7,6 +7,11 @@ const sugar = require("sugar");
 const chalk = require("chalk");
 const exec = require("child_process").exec;
 
+// Throw a fatal error
+const fatal = err => {
+  console.error(`fatal: ${err}`);
+}
+
 process.argv.splice(0, 2);
 if (process.argv.length > 0) {
 
@@ -23,16 +28,16 @@ if (process.argv.length > 0) {
     let command = "GIT_COMMITTER_DATE=\"" + dateString + "\" git commit --amend --date=\"" + dateString + "\" --no-edit";
     exec(command, (err, stdout, stderr) => {
       if (err) {
-        console.log("fatal: Could not change the previous commit");
+        fatal("Could not change the previous commit");
       } else {
         console.log("\nModified previous commit:\n    AUTHOR_DATE " + chalk.grey(dateString) + "\n    COMMITTER_DATE " + chalk.grey(dateString) + "\n\nCommand executed:\n    " + chalk.bgWhite.black(command) + "\n");
       }
     });
 
   } else {
-    console.log("fatal: Could not parse \"" + date + "\" into a valid date");
+    fatal("Could not parse \"" + date + "\" into a valid date");
   }
 
 } else {
-  console.log("fatal: No date string given");
+  fatal("No date string given");
 }
