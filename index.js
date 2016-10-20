@@ -25,7 +25,7 @@ if (process.argv.length > 0) {
       if (err) {
         console.log("fatal: Could not change the previous commit");
       } else {
-        console.log("\nModified previous commit:\n\tAUTHOR_DATE " + chalk.grey(dateString) + "\n\tCOMMITTER_DATE " + chalk.grey(dateString) + "\n\nCommand executed:\n\t" + chalk.bgWhite.black(command) + "\n");
+        console.log("\nModified previous commit:\n    AUTHOR_DATE " + chalk.grey(dateString) + "\n    COMMITTER_DATE " + chalk.grey(dateString) + "\n\nCommand executed:\n    " + chalk.bgWhite.black(command) + "\n");
       }
     });
 
