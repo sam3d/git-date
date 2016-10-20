@@ -13,13 +13,18 @@ const fatal = err => {
 }
 
 process.argv.splice(0, 2);
-if (process.argv.length > 0) {
+if (process.argv.length === 0) {
+  fatal("No date string given");
+} else {
 
   // Attempt to parse the date
   let date = process.argv.join(" ");
   let parsedDate = new sugar.Date.create(date);
 
-  if (parsedDate != "Invalid Date") {
+  console.log(parsedDate);
+  if (/Invalid Date/.test(parsedDate)) {
+    fatal("Could not parse \"" + date + "\" into a valid date");
+  } else {
 
     // Date could be parsed, parse the date to git date format
     let dateString = moment(parsedDate).format("ddd MMM DD HH:mm:ss YYYY ZZ");
@@ -33,11 +38,5 @@ if (process.argv.length > 0) {
         console.log("\nModified previous commit:\n    AUTHOR_DATE " + chalk.grey(dateString) + "\n    COMMITTER_DATE " + chalk.grey(dateString) + "\n\nCommand executed:\n    " + chalk.bgWhite.black(command) + "\n");
       }
     });
-
-  } else {
-    fatal("Could not parse \"" + date + "\" into a valid date");
   }
-
-} else {
-  fatal("No date string given");
 }
