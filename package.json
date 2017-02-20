@@ -1,6 +1,6 @@
 {
   "name": "git-date",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "easily change the date of the previous git commit",
   "main": "index.js",
   "repository": {
