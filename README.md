@@ -19,7 +19,7 @@ $ git date <date string>
 
 Because `git-date` uses the full power of the [date library](https://sugarjs.com/docs/#/DateParsing) provided by `sugarjs`, you can use a very large variety of commands to change the date:
 
-```console
+```
 $ git date 2010
 $ git date 2010-05
 $ git date 2010-05-25
