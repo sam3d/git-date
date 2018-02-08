@@ -7,7 +7,7 @@ const sugar = require("sugar");
 const chalk = require("chalk");
 const exec = require("child_process").exec;
 
-const fatal = err => {
+let fatal = err => {
     console.error(`fatal: ${err}`);
     process.exit(1);
 };
