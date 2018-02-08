@@ -2,14 +2,14 @@
   "name": "git-date",
   "version": "1.0.1",
   "description": "easily change the date of the previous git commit",
-  "main": "index.js",
+  "main": "git-date.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/samholmes1337/git-date.git"
   },
   "preferGlobal": true,
   "bin": {
-    "git-date": "index.js"
+    "git-date": "git-date.js"
   },
   "keywords": [
     "git",
