@@ -29,5 +29,5 @@ let dateString = moment(parsedDate).format("ddd MMM DD HH:mm:ss YYYY ZZ");
 let command = `GIT_COMMITTER_DATE="${dateString}" git commit --amend --date="${dateString}" --no-edit`;
 exec(command, (err, stdout, stderr) => {
     if (err) fatal("Could not modify the date of the previous commit");
-    console.log(chalk`\nModified previous commit:\n    AUTHOR_DATE {grey ${dateString}}\n    COMMITTER_DATE {grey ${dateString}}\n\nCommand executed:\n    {bgWhite.black ${command}}\n`);
+    console.log(chalk`\nModified previous commit:\n    AUTHOR_DATE {grey ${dateString}}\n    COMMITTER_DATE {grey ${dateString}}\n\nCommand executed:\n    {grey ${command}}\n`);
 });
