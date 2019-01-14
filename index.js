@@ -45,7 +45,7 @@ exec(command, (err, stdout, stderr) => {
   if (err || stderr) exit("Could not modify the date of the previous commit");
 
   console.log(
-    chalk`\nModified previous commit:\n    AUTHOR_DATE    {grey ${dateString}}\n    COMMITTER_DATE {grey ${dateString}}\n\nCommand executed:\n    {grey ${command}}\n`
+    chalk`\nModified previous commit:\n    AUTHOR_DATE    {green ${dateString}}\n    COMMITTER_DATE {green ${dateString}}\n\nCommand executed:\n    {blue ${command}}\n`
   );
 });
 
