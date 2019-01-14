@@ -7,6 +7,11 @@ const sugar = require("sugar");
 const chalk = require("chalk");
 const { exec } = require("child_process");
 
+// Update notification
+const updateNotifier = require("update-notifier");
+const pkg = require("./package.json");
+updateNotifier({ pkg }).notify();
+
 const examples = [
   "2010",
   "Tuesday May 25th, 2010",
